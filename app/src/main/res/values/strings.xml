@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Formulaire</string>
+    <string name="title_main">FORMULAIRE D\'INSCRIPTION</string>
+    <string name="title_summary">RÉSUMÉ DES DONNÉES</string>
+    <string name="label_fullname">Identité complète</string>
+    <string name="hint_fullname">Saisir votre nom</string>
+    <string name="label_email">Courriel</string>
+    <string name="hint_email">votre@mail.com</string>
+    <string name="label_phone">Numéro GSM</string>
+    <string name="hint_phone">06…</string>
+    <string name="label_address">Adresse</string>
+    <string name="hint_address">Rue, N°, quartier…</string>
+    <string name="label_city">Cité / Ville</string>
+    <string name="hint_city">Nom de la ville</string>
+    <string name="btn_submit">Valider les données</string>
+    <string name="btn_back">Retour au formulaire</string>
+    <string name="footer_text">© 2024 - Application de Formulaire</string>
+    <string name="empty_field">Non spécifié</string>
+    <string name="error_mandatory">Identité et Courriel sont obligatoires</string>
+</resources>

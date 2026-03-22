@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/beige_clair"
+    android:fitsSystemWindows="true">
+
+    <!-- Partie en haut : Bandeau de titre -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/marron_fonce"
+        android:elevation="4dp"
+        android:gravity="center"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_main"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- Contenu central scrollable -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="24dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/label_fullname"
+                android:textStyle="bold|italic"
+                android:textColor="@color/marron_fonce"/>
+
+            <EditText
+                android:id="@+id/inputFullName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_fullname"
+                android:inputType="textPersonName"
+                android:textColor="@color/marron_fonce"
+                android:textColorHint="#A1887F"
+                android:backgroundTint="@color/marron_fonce"
+                android:autofillHints="name" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/label_email"
+                android:layout_marginTop="12dp"
+                android:textStyle="bold|italic"
+                android:textColor="@color/marron_fonce"/>
+
+            <EditText
+                android:id="@+id/fieldMail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_email"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/marron_fonce"
+                android:textColorHint="#A1887F"
+                android:backgroundTint="@color/marron_fonce"
+                android:autofillHints="emailAddress" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/label_phone"
+                android:layout_marginTop="12dp"
+                android:textStyle="bold|italic"
+                android:textColor="@color/marron_fonce"/>
+
+            <EditText
+                android:id="@+id/fieldMobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_phone"
+                android:inputType="phone"
+                android:textColor="@color/marron_fonce"
+                android:textColorHint="#A1887F"
+                android:backgroundTint="@color/marron_fonce"
+                android:autofillHints="phone" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/label_address"
+                android:layout_marginTop="12dp"
+                android:textStyle="bold|italic"
+                android:textColor="@color/marron_fonce"/>
+
+            <EditText
+                android:id="@+id/editLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_address"
+                android:inputType="textPostalAddress"
+                android:textColor="@color/marron_fonce"
+                android:textColorHint="#A1887F"
+                android:backgroundTint="@color/marron_fonce"
+                android:autofillHints="postalAddress" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/label_city"
+                android:layout_marginTop="12dp"
+                android:textStyle="bold|italic"
+                android:textColor="@color/marron_fonce"/>
+
+            <EditText
+                android:id="@+id/editCity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_city"
+                android:inputType="textCapWords"
+                android:textColor="@color/marron_fonce"
+                android:textColorHint="#A1887F"
+                android:backgroundTint="@color/marron_fonce"
+                android:autofillHints="postalAddress" />
+
+            <Button
+                android:id="@+id/actionSubmit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_submit"
+                android:paddingStart="40dp"
+                android:paddingEnd="40dp"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/marron_fonce"
+                android:layout_marginTop="24dp"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Partie en bas : Bandeau de pied de page -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/marron_fonce"
+        android:padding="10dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/footer_text"
+            android:textSize="12sp"
+            android:textStyle="italic"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</LinearLayout>
